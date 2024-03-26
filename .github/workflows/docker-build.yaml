@@ -45,7 +45,7 @@ jobs:
           context: .
           file: ./Dockerfile.12.17
           push: true
-          tags: ghcr.io/hpe-sre/postgres-mayastore-image:12.17
+          tags: ghcr.io/l1ghtman2k/postgres-mayastore-image:12.17
           labels: ${{ steps.meta.outputs.labels }}
 
       - name: Build and push Docker image
@@ -54,5 +54,5 @@ jobs:
           context: .
           file: ./Dockerfile.15.3
           push: true
-          tags: ghcr.io/hpe-sre/postgres-mayastore-image:15.3
+          tags: ghcr.io/l1ghtman2k/postgres-mayastore-image:15.3
           labels: ${{ steps.meta.outputs.labels }}
